@@ -1,0 +1,18 @@
+principal
+
+<!--router-outlet /-->
+<nav>
+    <a routerLink="/dashboard">dashboard</a> <br>
+    <a routerLink="/login">login</a>
+</nav>
+
+<div>
+    <h1>Welcome, {{ [(user)] }}</h1>
+    <p>Current theme: {{ [(theme)] }}</p>
+</div>
+
+<div>version {{this.version}}</div>
+
+<button type="button" (click)="accion()">Actualizar</button>
+
+<router-outlet></router-outlet>
